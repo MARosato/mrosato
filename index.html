@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title> Macarena Ayelén Rosato </title>
 
-    <link rel="stylesheet" href="main.css">
+    <!-- Details -->
+    <meta name="theme-color" content="#ff0095">
+    <meta name="description" content="Portafolio de Macarena Ayelén Rosato. Estudiante de Ingeniería en Informática.">
+
+    <link rel="canonical" href="https://marosato-portfolio.netlify.app/"> <!-- Página Original -->
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <!-- FAVICONS -->
+    <!-- FAVICONS / LOGO -->
+    <link rel="icon" type="image/png/jpg" sizes="32x32" href="img/Logo/Logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/Logo/Logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Logo/Logo.png">
 
     <!-- CARDS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,19 +30,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 
 
     <!-- GOOGLE FONTS -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
         @import"https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap";
         @import"https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Titillium+Web:wght@200&display=swap";
@@ -48,120 +52,282 @@
     </style>
 </head>
 
-<header class="transparent">
-    <div class="main-container">
-        <!-- MENÚ -->
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home"> INICIO </a>
-                    </li>
-                    <li>
-                        <a href="#about"> SOBRE MI </a>
-                    </li>
-                    <li>
-                        <a href="#knowledge"> CONOCIMIENTOS </a>
-                    </li>
-                    <li>
-                        <a href="#certificate"> CERTIFICADOS </a>
-                    </li>
-                    <li>
-                        <a href="#portfolio"> PORTAFOLIOS </a>
-                    </li>
-                    <li>
-                        <a href="#education"> ESTUDIOS </a>
-                    </li>
-                    <li>
-                        <a href="#contact"> CONTACTO </a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#language" class="dropdown-button">
-                                <span class="material-symbols-outlined"> language </span>
-                            </a>
-                            <div class="dropdown-content">
-                                <label for="lang-select">
-                                    <select id="lang-select">
-                                        <option value="es"> Español </option>
-                                        <option value="en"> English </option>
-                                    </select>
-                                </label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<!-- MENÚ -->
+<header class="header">
+    <div class="menu">
+        <nav class="navbar">
+            <h3>
+                <a href="#logo" id="logo">
+                    MROSATO
+                    <span class="dot"></span>
+                </a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="#home"> INICIO </a>
+                </li>
+                <li>
+                    <a href="#about"> ACERCA DE </a>
+                </li>
+                <li>
+                    <a href="#portfolio"> PORTAFOLIO </a>
+                </li>
+                <li>
+                    <a href="#contact"> CONTACTO </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body>
-    <!-- HOME -->
+
+    <!-- INICIO -->
     <section class="home" id="home">
-        <div class="intro">
-            <h3 class="welcome"> HOLA, SOY </h3>
-            <h1 class="name-surname"> MACARENA ROSATO </h1>
-            <h3 class="welcome"> Y SOY </h3>
-            <h2 class="frontext">
-                <span class="developer"> DESARROLLADORA </span>
-                <span class="fullstack"> FULL STACK </span>
-            </h2>
-        </div>
-        <!-- CV -->
-        <div class="button-home">
-            <div class="ripple"></div>
-            <div class="button-wrapper">
-                <a href="Archivos/CV Macarena Ayelén Rosato.pdf" target="_blank" id="downloadButton"> Descarga mi CV
-                </a>
-                <span class="material-symbols-outlined"> download </span>
-            </div>
-        </div>
+
+        <!-- First article -->
+        <article class="presentation">
+            <div class="presentation-container">
+                <!-- Multimedia -->
+                <!-- <figure>
+                  <img src="Archivos\Foto 1.jpg" title="Macarena Ayelén Rosato"
+                      alt="Fotografía de Macarena Ayelén Rosato">
+              </figure> -->
+                <!-- TITLE -->
+                <div class="presentation-titles">
+                    <h1 class="name-title"> MACARENA AYELÉN ROSATO </h1>
+                    <h1 class="profession-title"> DESARROLLADORA FULL STACK </h1>
+                </div>
+
+                <div class="technology">
+                    <div class="technology-container">
+                        <div class="technology-icons">
+                            <h2 class="technology-title"> Tecnologías: </h2>
+                            <ul>
+                                <li>
+                                    <img src="Archivos\Logo - HTML (2).png" alt="HTML Logo">
+                                    <span class="technology-name"> HTML </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos/Logo - CSS (2).png" alt="CSS Logo">
+                                    <span class="technology-name"> CSS </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - JS.png" alt="JS Logo">
+                                    <span class="technology-name"> JS </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - Bootstrap (2).png" alt="Bootstrap Logo"
+                                        class="logo-bootstrap">
+                                    <span class="technology-name"> Bootstrap </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - Vue.js.png" alt="Vue.js Logo">
+                                    <span class="technology-name"> Vue.js </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - MySQL.png" alt="MySQL Logo">
+                                    <span class="technology-name"> MySQL </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - Python.png" alt="Python Logo">
+                                    <span class="technology-name"> Python </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\Logo - Flask.png" alt="Flask Logo">
+                                    <span class="technology-name"> Flask </span>
+                                </li>
+                                <li>
+                                    <img src="Archivos\pngwing.com.png" alt="Django Logo" class="logo-django">
+                                    <span class="technology-name"> Django </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- CV -->
+                <div class="button-home">
+                    <div class="ripple"></div>
+                    <div class="button-wrapper">
+                        <a href="Archivos/CV Macarena Ayelén Rosato.pdf" target="_blank" rel="noreferrer"
+                            id="downloadButton">
+                            Descarga mi CV
+                        </a>
+                        <span class="material-symbols-outlined"> download </span>
+                    </div>
+                </div>
+        </article>
     </section>
 
     <!-- ABOUT-->
     <section class="about" id="about">
-        <h2> SOBRE MI </h2>
-        Mi primera página web hecha con HTML, CSS......
-    </section>
-
-    <!-- KNOWLEDGE -->
-    <section class="knowledge" id="knowledge">
-        <h2> CONOCIMIENTOS </h2>
-        Mi primera página web hecha con HTML, CSS......
-    </section>
-
-    <!-- CERTIFICATE -->
-    <section class="certificate" id="certificate">
-        <h2> CERTIFICADOS </h2>
-        <div class="certificate">
-            <h3>
-                Agencia De Aprendizaje a lo Largo de la Vida <br>
-                Desarrollo Full Stack Python. <br>
-                2022 <br>
-                Gobierno de la Ciudad de Buenos Aires.
-            </h3>
-        </div>
+        <article>
+            <div class="profile">
+                <div class="description">
+                    <h2>
+                        SOBRE MI
+                        <span class="dot"></span>
+                    </h2>
+                    <p>
+                        Estudiante de la carrera de Ingeniería en Informática con 23 años. Residente de la Ciudad de
+                        Buenos
+                        Aires. Constantemente expandiendo mis conocimientos y habilidades en el campo de la informática.
+                    </p>
+                </div>
+                <div class="education">
+                    <h2>
+                        Educación:
+                    </h2>
+                    <ul>
+                        Agencia De Aprendizaje a lo Largo de la Vida <br>
+                        <li>
+                            Desarrollo Full Stack Python.
+                        <li>
+                            2022
+                        </li>
+                        <li>
+                            Gobierno de la Ciudad de Buenos Aires.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
     </section>
 
     <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
-        <h2> PORTAFOLIOS </h2>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-                alt="">
-            <div class="card-content">
-                <h2> TIENDA EMME </h2>
-                <p>
-                    Mi primer proyecto. <br>
-                    Hecho con: <br>
-                    HTML, CSS y JavaScript (agregar los íconos correspondientes).
-                </p>
-                <a href="https://tiendaemme.netlify.app/" class="button-card">
-                    Visitar proyecto
-                    <span class="material-symbols-outlined"> arrow_right_alt </span>
-                </a>
+        <h2 class="title-portfolio"> PORTAFOLIO
+            <span class="dot"></span>
+        </h2>
+        <!-- Proyect -->
+        <article class="project">
+            <div class="proyect-container">
+                <figure>
+                    <img src="https://picsum.photos/id/1011/800/450" title="Tienda EMME" alt="Tienda de ropa online.">
+                </figure>
+                <!-- Body -->
+                <div class="project-body">
+                    <h2> TIENDA EMME </h2>
+                    <p>
+                        Exclusiva boutique de moda en línea que brinda a los clientes una experiencia única de
+                        compras.
+                    </p>
+                    <p class="made-with">
+                        Hecha con:
+                    </p>
+                    <!-- Icons -->
+                    <div class="project-icons">
+                        <i class="fab fa-html5">
+                            <span class="etiqueta-icon"> HTML </span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                            <span class="etiqueta-icon"> CSS </span>
+                        </i>
+                        <i class="fab fa-js-square">
+                            <span class="etiqueta-icon"> JS </span>
+                        </i>
+                    </div>
+                    <!-- Links -->
+                    <div class="project-links">
+                        <a href="https://tiendaemme.netlify.app/" class="button-card" target="_blank" rel="noreferrer">
+                            Demo
+                            <span class="material-symbols-outlined"> open_in_new </span>
+                        </a>
+                        <a href="https://github.com/MARosato/EMME" class="button-card" target="_blank" rel="noreferrer">
+                            Code
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </div>
+                </div>
+        </article>
+
+        <article class="project">
+            <div class="proyect-container">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/800/450" title="" alt="">
+                </figure>
+
+                <div class="project-body">
+                    <h2> TITLE </h2>
+                    <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                        congue
+                        bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                        egestas.
+                    </p>
+
+                    <p class="made-with">
+                        Hecha con:
+                    </p>
+                    <!-- Icons -->
+                    <div class="project-icons">
+                        <i class="fab fa-html5">
+                            <span class="etiqueta-icon"> HTML </span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                            <span class="etiqueta-icon"> CSS </span>
+                        </i>
+                        <i class="fab fa-js-square">
+                            <span class="etiqueta-icon"> JS </span>
+                        </i>
+                    </div>
+                    <!-- Links -->
+                    <div class="project-links">
+                        <a href="https://tiendaemme.netlify.app/" class="button-card" target="_blank" rel="noreferrer">
+                            Demo
+                            <span class="material-symbols-outlined"> open_in_new </span>
+                        </a>
+                        <a href="https://github.com/MARosato/EMME" class="button-card" target="_blank" rel="noreferrer">
+                            Code
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </div>
+                </div>
+        </article>
+
+        <article class="project">
+            <div class="proyect-container">
+                <figure>
+                    <img src="https://picsum.photos/id/103/800/450" title="" alt="">
+                </figure>
+
+                <div class="project-body">
+                    <h2> TITLE </h2>
+                    <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                        congue
+                        bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                        egestas.
+                    </p>
+                    <p class="made-with">
+                        Hecha con:
+                    </p>
+                    <!-- Icons -->
+                    <div class="project-icons">
+                        <i class="fab fa-html5">
+                            <span class="etiqueta-icon"> HTML </span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                            <span class="etiqueta-icon"> CSS </span>
+                        </i>
+                        <i class="fab fa-js-square">
+                            <span class="etiqueta-icon"> JS </span>
+                        </i>
+                    </div>
+                    <!-- Links -->
+                    <div class="project-links">
+                        <a href="https://tiendaemme.netlify.app/" class="button-card" target="_blank" rel="noreferrer">
+                            Demo
+                            <span class="material-symbols-outlined"> open_in_new </span>
+                        </a>
+                        <a href="https://github.com/MARosato/EMME" class="button-card" target="_blank" rel="noreferrer">
+                            Code
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </article>
     </section>
 
     <!-- EDUCATION -->
@@ -176,35 +342,38 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
+        <div class="contact">
+            <h2> CONTACTO </h2>
+        </div>
         <div class="form">
             <div class="wrapper">
                 <!-- Firstname -->
                 <div class="input-container ic1">
+                    <label class="iLabel" for="firstname"> Nombre </label>
                     <input placeholder="" type="text" class="input" id="firstname">
                     <div class="cut"></div>
-                    <label class="iLabel" for="firstname"> Nombre </label>
                 </div>
                 <!-- Lastname -->
                 <div class="input-container ic2">
+                    <label class="iLabel" for="lastname"> Apellido </label>
                     <input placeholder="" type="text" class="input" id="lastname">
                     <div class="cut"></div>
-                    <label class="iLabel" for="lastname"> Apellido </label>
                 </div>
             </div>
             <!-- Email -->
             <div class="input-container ic3">
-                <input placeholder="" type="text" class="input" id="email">
-                <div class="cut cut-short"></div>
                 <label class="iLabel" for="email"> Email </label>
+                <input placeholder="" type="email" class="input" id="email">
+                <div class="cut cut-short"></div>
             </div>
             <!-- Message -->
             <div class="input-container ic4">
+                <label class="iLabel" for="message"> Mensaje </label>
                 <input placeholder="" type="text" class="input" id="message">
                 <div class="cut"></div>
-                <label class="iLabel" for="message"> Mensaje </label>
             </div>
             <!-- Submit button -->
-            <button class="submit" type="text"> submit </button>
+            <button class="submit" type="submit"> Enviar </button>
         </div>
 
 
@@ -295,7 +464,7 @@
                         <!-- Columna 2: Redes sociales -->
                         <div class="footer-column">
                             <div class="social">
-                                <h3> REDES </h3>
+                                <h3> REDES SOCIALES </h3>
                                 <!-- GitHub Icon -->
                                 <a href="https://github.com/MARosato">
                                     <span class="fab fa-github"></span>
